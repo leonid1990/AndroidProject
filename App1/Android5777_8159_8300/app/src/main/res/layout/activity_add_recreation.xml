@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView android:text = "Business: "
+            android:layout_width="wrap_content"
+            android:layout_height = "wrap_content"/>
+        <Spinner
+            android:id="@+id/businessList_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView android:text = "Type Of Recreation: "
+            android:layout_width="wrap_content"
+            android:layout_height = "wrap_content"/>
+        <Spinner
+            android:id="@+id/typeOfRecreation_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView android:text = "Country: "
+            android:layout_width="wrap_content"
+            android:layout_height = "wrap_content"/>
+        <Spinner
+            android:id="@+id/countries_spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView android:text = "Date of beginning: "
+            android:layout_width="wrap_content"
+            android:layout_height = "wrap_content"/>
+
+        <EditText
+            android:id = "@+id/etDateOfBeginning"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:inputType = "date"
+            android:textAlignment="center" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pick_date"
+            android:onClick="showBeginningDatePickerDialog" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView android:text = "Date of ending: "
+            android:layout_width="wrap_content"
+            android:layout_height = "wrap_content"/>
+        <EditText
+            android:id = "@+id/etDateOfEnding"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:inputType = "date"
+            android:textAlignment="center" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pick_date"
+            android:onClick="showEndingDatePickerDialog" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView android:text = "Price in $: "
+            android:layout_width="wrap_content"
+            android:layout_height = "wrap_content"/>
+        <EditText
+            android:id = "@+id/etPrice"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:inputType="numberDecimal"
+            android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView android:text = "Description: "
+            android:layout_width="wrap_content"
+            android:layout_height = "wrap_content"/>
+        <EditText
+            android:id = "@+id/etDescription"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:textAlignment="center" />
+    </LinearLayout>
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView android:text = "ID of business: "
+            android:layout_width="wrap_content"
+            android:layout_height = "wrap_content"/>
+        <EditText
+            android:id = "@+id/etIdOfBusiness"
+            android:layout_width = "wrap_content"
+            android:layout_height = "wrap_content"
+            android:textAlignment="center" />
+    </LinearLayout>
+-->
+    <Button
+        android:id = "@+id/addRecreation"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:text = "Add Recreation"
+        android:onClick = "onAddRecreation"/>
+</LinearLayout>
